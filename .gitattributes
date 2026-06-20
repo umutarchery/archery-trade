@@ -1,0 +1,4 @@
+# Shell scriptleri ve Linux config dosyaları daima LF olsun (CRLF Ubuntu'da bozar)
+*.sh text eol=lf
+deploy/archerytrade.service text eol=lf
+deploy/nginx.conf text eol=lf

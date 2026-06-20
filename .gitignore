@@ -1,0 +1,24 @@
+# dependencies
+node_modules/
+server/node_modules/
+
+# build çıktıları
+dist/
+server/dist/
+
+# ortam değişkenleri (şifre içerir — repoya GİTMEZ)
+server/.env
+.env.local
+
+# veritabanı
+server/*.db
+server/*.db-*
+
+# loglar
+*.log
+npm-debug.log*
+
+# editör/işletim sistemi
+.DS_Store
+.vscode/
+*.swp

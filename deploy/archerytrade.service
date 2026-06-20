@@ -1,0 +1,21 @@
+[Unit]
+Description=ArcheryTrade Karpuz API + Mineflayer Bot
+After=network.target
+
+[Service]
+Type=simple
+# Kurulum yolunu kendine göre değiştir:
+WorkingDirectory=/opt/archery-trade/server
+ExecStart=/usr/bin/node dist/index.js
+Restart=always
+RestartSec=5
+# .env'i okur (MC_PASSWORD vb.)
+EnvironmentFile=/opt/archery-trade/server/.env
+User=archery
+Group=archery
+# Loglar journald'a gider: journalctl -u archerytrade -f
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
